@@ -1,4 +1,4 @@
-//Bubble Sort
+//Bubble Sort(puts last number in the last)
 #include<iostream>
 using namespace std;
 
