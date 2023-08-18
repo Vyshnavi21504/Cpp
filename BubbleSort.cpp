@@ -2,16 +2,19 @@
 #include<iostream>
 using namespace std;
 
-void BubbleSort(int a[] , int n){
-	for(int i=n-1;i>=1;i--){
-		for(int j = 0;j<=i-1;j++){
-		if(a[j]>a[j+1]){
-			int temp = a[j+1];
-			a[j+1] = a[j];
-			a[j] = temp;
-		}	
-		}
-	}
+void BubbleSort(int a[], int n) {
+    // Outer loop iterates from the last index towards the first index of the array
+    for (int i = n - 1; i >= 1; i--) {
+        // Inner loop iterates through the array from the first index to (i-1) index
+        for (int j = 0; j <= i - 1; j++) {
+            // Comparing adjacent elements and swapping them if they are out of order
+            if (a[j] > a[j + 1]) {
+                int temp = a[j + 1];  // Temporary variable to hold the smaller element
+                a[j + 1] = a[j];      // Assigning the larger element to the next position
+                a[j] = temp;         // Assigning the smaller element to the current position
+            }
+        }
+    }
 }
 
 int main(){
