@@ -67,7 +67,7 @@ Node* takeInput(){
 
 int main(){
 	Node *head = takeInput();;
-	printIthNode(head,2);
+	printIthNode(head,2);  //here 2nd index number get printed
 	
 	return 0;
 }
