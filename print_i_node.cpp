@@ -1,5 +1,5 @@
 //print ith node
-//print ith node
+
 #include<iostream>
 using namespace std;
 class Node{
