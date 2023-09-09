@@ -1,5 +1,4 @@
 //print ith node
-
 #include<iostream>
 using namespace std;
 class Node{
@@ -66,8 +65,10 @@ Node* takeInput(){
 }
 
 int main(){
-	Node *head = takeInput();;
-	printIthNode(head,2);  //here 2nd index number get printed
+	Node *head = takeInput();
+	int i;
+	cin>>i;
+	printIthNode(head,i); //i is the index number to put in terminal u want to receive
 	
 	return 0;
 }
