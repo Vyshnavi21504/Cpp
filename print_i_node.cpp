@@ -31,12 +31,12 @@ int length(Node *head){
 
 void printIthNode(Node *head , int i){
 	int n = length(head);
-	if(i<0 || i>=n-1){
+	if(i < 0 || i >= n){
 		cout<<"-1"<<endl;
 		return ;
 	}
 	int count = 0;
-	while(count<i){
+	while(count<i && head!=NULL){
 		head = head->next;
 		count++;
 	}
@@ -68,7 +68,7 @@ int main(){
 	Node *head = takeInput();
 	int i;
 	cin>>i;
-	printIthNode(head,i); //i is the index number to put in terminal u want to receive
+	printIthNode(head,i);
 	
 	return 0;
 }
