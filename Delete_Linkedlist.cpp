@@ -1,4 +1,4 @@
-//delete ith Node in Linkes List without memory Leak
+//delete ith Node in Linked List without memory Leak
 #include<iostream>
 using namespace std;
  class Node {
