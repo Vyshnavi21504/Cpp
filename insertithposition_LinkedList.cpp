@@ -52,7 +52,7 @@ Node* insertithposition(Node* head, int i, int data) {
     if (i == 0) {
         Node* n = new Node(data);
         n->next = head;
-        head = n;
+        head = n; // Inserting at the beginning, so update the head
         return head;
     }
 
@@ -64,17 +64,10 @@ Node* insertithposition(Node* head, int i, int data) {
     }
 
     if (current) { 
-    //METHOD-1
-//        Node* n = new Node(data);
-//        n->next = current->next;
-//        current->next = n;
-
-       //METHOD-2
-          	 if (current) { 
+        // Inserting at the desired position
         Node* n = new Node(data);
         n->next = current->next;
         current->next = n;
-    }
     }
     return head;
 }
@@ -82,17 +75,17 @@ Node* insertithposition(Node* head, int i, int data) {
 Node* takeInput() {
     int data;
     cin >> data;
-    Node* head = NULL;
-    Node* tail = NULL;
+    Node* head = NULL; // Initialize the head of the linked list
+    Node* tail = NULL; // Initialize the tail of the linked list
     while (data != -1) {
         Node* n = new Node(data);
         if (head == NULL) {
-            head = n;
-            tail = n;
+            head = n; // If it's the first node, set it as the head
+            tail = n; // If it's the first node, set it as the tail
         }
         else {
-            tail->next = n;
-            tail = n;
+            tail->next = n; // Connect the new node to the previous tail
+            tail = n; // Update the tail to the new node
         }
         cin >> data;
     }
@@ -100,11 +93,11 @@ Node* takeInput() {
 }
 
 int main() {
-    Node* head = takeInput(); 
+    Node* head = takeInput(); // Take input and create the linked list
     int i, data;
     cin >> i >> data;
     Node* copyhead = head; // Declare copyhead and initialize it with the original head
-    head = insertithposition(head, i, data); 
-    print(head);
+    head = insertithposition(head, i, data); // Insert a node at the specified position
+    print(head); // Print the updated linked list
     return 0;
 }
