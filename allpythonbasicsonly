@@ -1,0 +1,121 @@
+#printing hello and hi in diff lines
+# print("hello  \n hi")
+# '''for quotes in print statement'''
+# print("I am \"good\"boy")
+
+
+#Variablea and data types
+# a = 123 
+# print(a)
+# b ="hello"
+# print(b)
+# a1 = 234
+# print(a+a1)
+# print(type(a))
+
+#basic expamle of list , tuple and dictionary
+# list1 = [ 8 , 2.3 , [-4,5] , [ "apple" , "bannana"]]
+# print(list1)
+
+# tuple1 = (("parrot" , "sparrow") , ("Lion" , "Tiger"))
+# print(tuple1)
+
+# dict1 = {"name":"sakshi" , "age ": 20, "canVote":"yes"}
+# print(dict1)
+
+#typecasting(explict)
+# a = "1"
+# b = "2"
+# print(int(a)+ int(b))
+
+#implict(ans gets converted in float)
+# a = 1.9
+# b=2
+# print(a+b)
+
+#input and output
+# a = input()
+# print("hi,I am" , a)
+
+#input to consider a int catenation
+# a = input("enter first number: ")
+# b = input("enter second number : ")
+# print(int(a)+int(b))
+
+#printing multiple lines in string
+# name = '''youuu are awesome
+# cfdvrfbv
+# vfdbrbgf'''
+# print(name)
+
+#printing string indexes
+# name  = input("enter your name: ")
+# print(name)
+# print(name[0])
+# print(name[1])
+
+#for loop with strings
+# apple = "yoyo whats up"
+# for character in apple:
+#   print(character)
+
+#string slicing
+#to find length
+# name = "appless"
+# print(len(name))
+# print(name[0:3])
+# print(name[1:4])
+# print(name[:6])
+# print(name[:])
+# print(name[0:-3])
+
+#string operation
+a = "vys"
+print(a.upper())
+print(a.lower())
+print(a.rstrip())
+print(a.replace("vys" , "You"))
+print(a.split(" "))
+#split converts string to list
+W= "intro"
+print(W.capitalize())
+#center
+print(a.center(50))
+#no of times in the string
+print(a.count(a))
+
+str2 = "Welcome to console"
+print(str2.endswith("to" , 4 , 10))
+#check if string is presenr particular
+str3 = "he's name is jack. he is an honest man"
+print(str3.find("is"))
+
+#isalnum 
+str4 = "WelcomeToTheConsole1"
+print(str4.isalnum())
+
+#isalpha
+print(str4.isalpha())
+
+#check if all characters are upper and lower case
+print(str2.isupper())
+print(str3.islower())
+
+print(str4.isprintable())
+str5 = "you \n know"
+print(str5.isprintable())
+
+str6 = " "
+print(str6.isspace())
+
+print(str3.title())
+print(str3.istitle())
+
+str7 = "python is good"
+print(str7.startswith("Python"))
+
+str8 = "Fuck Youu"
+print(str8.swapcase())
+
+
+
