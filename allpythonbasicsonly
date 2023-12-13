@@ -70,52 +70,142 @@
 # print(name[0:-3])
 
 #string operation
-a = "vys"
-print(a.upper())
-print(a.lower())
-print(a.rstrip())
-print(a.replace("vys" , "You"))
-print(a.split(" "))
-#split converts string to list
-W= "intro"
-print(W.capitalize())
-#center
-print(a.center(50))
-#no of times in the string
-print(a.count(a))
+# a = "vys"
+# print(a.upper())
+# print(a.lower())
+# print(a.rstrip())
+# print(a.replace("vys" , "You"))
+# print(a.split(" "))
+# #split converts string to list
+# W= "intro"
+# print(W.capitalize())
+# #center
+# print(a.center(50))
+# #no of times in the string
+# print(a.count(a))
 
-str2 = "Welcome to console"
-print(str2.endswith("to" , 4 , 10))
-#check if string is presenr particular
-str3 = "he's name is jack. he is an honest man"
-print(str3.find("is"))
+# str2 = "Welcome to console"
+# print(str2.endswith("to" , 4 , 10))
+# #check if string is presenr particular
+# str3 = "he's name is jack. he is an honest man"
+# print(str3.find("is"))
 
-#isalnum 
-str4 = "WelcomeToTheConsole1"
-print(str4.isalnum())
+# #isalnum 
+# str4 = "WelcomeToTheConsole1"
+# print(str4.isalnum())
 
-#isalpha
-print(str4.isalpha())
+# #isalpha
+# print(str4.isalpha())
 
-#check if all characters are upper and lower case
-print(str2.isupper())
-print(str3.islower())
+# #check if all characters are upper and lower case
+# print(str2.isupper())
+# print(str3.islower())
 
-print(str4.isprintable())
-str5 = "you \n know"
-print(str5.isprintable())
+# print(str4.isprintable())
+# str5 = "you \n know"
+# print(str5.isprintable())
 
-str6 = " "
-print(str6.isspace())
+# str6 = " "
+# print(str6.isspace())
 
-print(str3.title())
-print(str3.istitle())
+# print(str3.title())
+# print(str3.istitle())
 
-str7 = "python is good"
-print(str7.startswith("Python"))
+# str7 = "python is good"
+# print(str7.startswith("Python"))
 
-str8 = "Fuck Youu"
-print(str8.swapcase())
+# str8 = "Fuck Youu"
+# print(str8.swapcase())
+
+
+#if-else condition
+# a= input("enter ur age: ")
+# n = int(a)
+# if(n>18):
+#   print("Your greter that 18 yrs ")
+# else:
+#   print("You are younger that 18 or 18yrs")
+
+
+#function
+# def isgreater(a,b):
+#   if(a>=b):
+#     print("A wins")
+#   else:
+#     print("B Wins")
+
+# # a = 4
+# # b = 9
+# # isgreater(a,b)
+
+# c = 10
+# d = 8;
+# isgreater(c,d)
 
 
 
+#Arguments
+# def my_function(country = "Norway"):
+#  print("I am from " , country)
+# my_function("Sweden")
+# my_function("India")
+# my_function()
+# my_function("Brazil")
+
+
+#passing list in arguments
+# def my_function(food):
+#  for x in food:
+#   print(x)
+# fruits = ["apple", "banana", "cherry"]
+# my_function(fruits)
+
+# thislist = ["apple", "banana", "cherry"]
+# thislist.append("orange")
+# print(thislist)
+
+# thislist = ["apple", "banana", "cherry"]
+# thislist[1] = "blackcurrant"
+# print(thislist
+
+# thislist = ["apple", "banana", "cherry"]
+# thislist.clear()
+# print(thislist)
+
+# thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
+# thislist[1:3] = ["blackcurrant", "watermelon"]
+# print(thislist)
+
+# thislist = ["apple", "banana", "cherry"]
+# thislist[1] = "blackcurrant"
+# print(thislist)
+
+# thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+# print(thistuple[2:5])
+
+# x = ("apple", "banana", "cherry")
+# y = list(x)
+# y[1] = "kiwi"
+# x = tuple(y)
+# print(x)
+
+# fruits = ("apple", "banana", "cherry")
+# (green, yellow, red) = fruits
+# print(green)
+# print(yellow)
+# print(red)
+
+# thisset = {"apple", "banana", "cherry", "apple"}
+# print(thisset)
+
+# thisset = {"apple", "banana", "cherry", False, True, 0}
+# print(thisset)
+
+# thisset = {"apple", "banana", "cherry"}
+# thisset.add("orange")
+# print(thisset)
+
+thisset = {"apple", "banana", "cherry"}
+tropical = {"pineapple", "mango", "papaya"}
+thisset.update(tropical)
+print(thisset)
